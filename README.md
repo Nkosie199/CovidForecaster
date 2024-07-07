@@ -17,7 +17,7 @@ It is important to note that the forecasts_covid.py contains the following line:
 ARIMA(cases_series, order=(p, d, q))
 ```
 
-which is based on assumptions and impacts ultimately affects the accuracy of the forecast generated. 
+which is based on assumptions and ultimately affects the accuracy of the forecast generated. 
 
 Reasons for choosing (5, 1, 0):
 - We chose p = 5 to consider the last 5 days' data to predict the current day's new cases.
