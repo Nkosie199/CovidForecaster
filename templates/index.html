@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .button-container {
+            margin: 20px;
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="my-4">COVID-19 Forecast for South Africa</h1>
+    <div class="button-container">
+        <a href="/api" class="button">API</a>
+        {% block api_content %}
+        {% endblock %}
+        <a href="/chart" class="button">Chart</a>
+        {% block chart_content %}
+        {% endblock %}
+        <a href="/timeseries" class="button">Timeseries</a>
+    </div>
+</body>
+</html>

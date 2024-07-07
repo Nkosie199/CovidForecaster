@@ -1,0 +1,42 @@
+This study uses 1562 data points between the 8th of March 2020 and the 16th of June 2024
+to predict the number of new covid-19 cases for the 7 days after the 16th of June 2024.
+
+The timeseries suggests that the number of new covid cases are in steady decline.
+The average rate of decline forecasted is -0.000000000000000045894196857 per day.
+
+This could be due to any of the following reasons:
+1. Heard immunity
+- The number of vaccination individuals could have reached a point
+whereby we have achieved heard immunity, hereby reducing the spread
+of the virus and decrease the number of new cases.
+
+2. Lockdowns
+- Lockdowns could decrease the number of people who are willing and able 
+to get tested for covid due to decreased rates of mobility. When people are
+not mobile they are less likely to visit testing stations and more likely
+to treat themselves at home.
+
+3. Covid fatigue
+- A lack of data could the cause of what appears to be a decline in
+new cases. This could be caused by covid fatigue, a phonomenon whereby
+data capturers could be taking the pandemic as seriously as before
+therefore failure to capturer data as frequently and accurately as before.
+
+4. Testing rates
+- From looking at the data can see that on some days we have 0 new cases
+while on other days we have a relatively significant number of new cases.
+The spike that we see forecasted on the 21st of June 2024 could be caused by
+phonomenon of having introduced new testing data periodacally in the past. 
+
+The data suggests that we have recently entered an phase of slow decline in new cases.
+This could be due to a number of factors, a few of which are mentioned above.
+
+To improve forecast accuracy, consider including the following data:
+- Vaccination rates
+- Public health policy changes (eg. lockdowns, etc)
+- Mobility data
+- Hospitalization rates
+- Testing rates
+
+Additionally, consider making use of a regression analysis to understand which
+factors correlate best to the variance in new cases observed over time.
