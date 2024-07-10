@@ -19,14 +19,13 @@ ARIMA(cases_series, order=(p, d, q))
 
 which is based on assumptions and ultimately affects the accuracy of the forecast generated. 
 
-Reasons for choosing (5, 1, 0):
+Reasons for choosing (5, 1, 3):
 - We chose p = 5 to consider the last 5 days' data to predict the current day's new cases.
 This period captures short-term dependencies and trends in the data.
 - Using d = 1 means that the time series is differenced once.
 That is, it accounts for the difference between consecutive observations in the time series.
 Differencing helps in removing trends or seasonal patterns, making the series stationary and more suitable for modeling.
-- Using q = 0 indicates that there is no moving average component included in the model.
-This assumes that the current value of the time series is only influenced by its own past values after differencing.
+- Using q = 3 indicates that there is a 3-day moving average component included in the model.
 
 To install & run:
 ```bash
